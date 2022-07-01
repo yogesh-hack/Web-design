@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+</head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Arapey:400i');
+ body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.right-nav-links li {
+  margin: 30px 10px;
+  cursor:pointer;
+}
+
+.right-nav-links li:hover {
+  text-decoration: underline;
+}
+
+.dot::after{
+  content: " •";
+}
+
+
+.active-link {
+  color: #e89180;
+}
+
+.left {
+  display: flex;
+  justofy-content: space-between;
+}
+
+text {
+  fill: #e88e80;
+  font-size: 0.5rem;
+}
+
+.center {
+  position: relative;
+}
+
+.center svg {
+  position: absolute;
+  transform: rotate(-50deg);
+  top: -72px;
+  left: -44px;
+}
+
+.left-nav-links li {
+  margin: 30px 10px;
+  cursor: pointer;
+}
+
+.left-nav-links li:hover {
+  text-decoration: underline;
+}
+
+.social-icons li {
+  margin: 30px 3px;
+  font-size: 1rem;
+}
+
+.border {
+  line-height: 20px;
+   border-bottom: solid 2px;
+}
+
+#arcs div {
+  border: 1px solid #e88e80;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  padding: 0.5em;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 15px;
+  left: -22px;
+}
+
+.lines {
+  height: 5px;
+  width: 100px;
+  border: 1px solid #e88e80;
+  position: absolute;
+  top: 65px;
+  left: -18px;
+  transform: rotate(-45deg);
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.blog-section {
+  margin-top: 50px;
+ display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+.blog-post-container {
+  width: 730px;
+  display: flex;
+}
+
+.illustration {
+  position: relative;
+}
+
+.illustration img {
+  margin-left: 40px;
+  width: 340px;
+} 
+
+.date {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  height: 100px;
+  width: 25px;
+  background: #F8C8C4;
+  color:white;
+  font-weight: bold;
+}
+
+.blog-snippet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #fff;
+  padding: 20px;
+}
+
+.tag {
+  display: inline;
+  width: 40px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  border-bottom: 10px solid #FDF3F2;
+  line-height: 1px;
+}
+
+.title {
+  font-family: 'Arapey', serif;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  color: #EA9384;
+}
+
+.para {
+  font-size: .8rem;
+}
+
+.para-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment {
+  font-weight: bold;
+}
+
+.read-more {
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 30px 30px 0 60px;
+  border: 1px solid #e88e80;
+  opacity: 0.1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color:black;
+}
+
+a:visited {
+  color: block;
+}
+
+.footer {
+  text-align:center;
+  margin-top: 60px;
+}
+
+.fa-codepen {
+  font-size: 2rem;
+  opacity: .5;
+}
+
+
+/* ©2015 Johannes Jakob
+   Made with <3 in Germany */
+
+body {
+  background: #ecf0f1;
+  color: #000;
+  font-family: HelveticaNeue, "Helvetica Neue", "Lucida Grande", Arial,
+    sans-serif;
+  font-size: 0.7rem;
+}
+
+/* window BEGIN */
+
+.window {
+  background: #fce0dc;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  margin-top: 12.5vh;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px #acacac;
+}
+
+.titlebar {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #ebebeb, color-stop(1, #d5d5d5))
+  );
+  background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: linear-gradient(top, #ebebeb, #d5d5d5);
+  color: #4d494d;
+  font-size: 11pt;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #f3f1f3;
+  border-bottom: 1px solid #b1aeb1;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+}
+
+.buttons {
+  padding-left: 8px;
+  padding-top: 3px;
+  float: left;
+  line-height: 0px;
+}
+
+.close {
+  background: #ff5c5c;
+  font-size: 9pt;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e33e41;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.close:active {
+  background: #c14645;
+  border: 1px solid #b03537;
+}
+
+.close:active .closebutton {
+  color: #4e0002;
+}
+
+.minimize {
+  background: #ffbd4c;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e09e3e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.minimize:active {
+  background: #c08e38;
+  border: 1px solid #af7c33;
+}
+
+.minimize:active .minimizebutton {
+  color: #5a2607;
+}
+
+.zoom {
+  background: #00ca56;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #14ae46;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.zoom:active {
+  background: #029740;
+  border: 1px solid #128435;
+}
+
+.zoom:active .zoombutton {
+  color: #003107;
+}
+
+/* window END */
+
+  </style>
+<body>
+<div class="window">
+  <div class="titlebar">
+    <div class="buttons">
+      <div class="close">
+        <!-- close button link -->
+      </div>
+      <div class="minimize">
+        <!-- minimize button link -->
+      </div>
+      <div class="zoom">
+        <!-- zoom button link -->
+      </div>
+    </div>
+    Yogesh's Blogs Website
+    <!-- window title -->
+  </div>
+  <div class="content">
+    <div class="container">
+      <nav class="navigation">
+        <div class="right">
+<!--           <ul class="right-nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li class="active-link">jeongahStory</li>
+            <li class="dot">cording</li>
+          </ul> -->
+        </div>
+        <div class="center">
+
+          <svg>
+    <path id="curve" d="M0,50 a1,1 0 0,0 100,0" fill="transparent"/>
+    <text width="500">
+      <textPath xlink:href="#curve" letter-spacing="4px" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </textPath>
+    </text>
+  </svg>
+          <div id="arcs">
+            <div>
+            </div>
+          </div>
+          <div class="lines">
+          </div>
+        </div>
+        <div class="left">
+          <div class="links">
+            <ul class="left-nav-links">
+              <li>design</li>
+              <li>mobile</li>
+              <li>web</li>
+            </ul>
+          </div>
+          <div class="icons">
+            <ul class="social-icons">
+              <li><svg width=15 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.1 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.7 86.2 298.4 0 192.4 0 86.3 0 0.1 86.3 0.1 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.1 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4C452.3 441.8 452.3 433.2 447.1 428zM27 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4C101.2 357.7 27 283.5 27 192.3z"/></svg>
+              </li>
+              <li class="border"><a href="https://instagram.com/mr.yo_ge_sh/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="blog-section">
+        <div class="blog-post-container">
+          <div class="illustration"><img src="https://cdn.dribbble.com/users/77342/screenshots/6269838/meisje.jpg">
+            <div class="date">
+              <div>23</div><span>/</span>
+              <div>10</div>
+            </div>
+          </div>
+          <div class="blog-snippet">
+            <div class="tag">Media</div>
+            <div class="title">jeongah story</div>
+            <div class="para">TO BE PROFESSIONAL WEB PUBLISHERS</div>
+            <div class="para-footer">
+              <div class="comment"><i class="far fa-comment"></i> 2</div>
+              <div class="read-more"><a href="" target="_blank">Read the post</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  &nbsp;｜&nbsp; <a href="" target="_blank"><i class="fab fa-codepen"></i>
+</div>
+  </body>
+</html>
