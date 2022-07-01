@@ -25,48 +25,178 @@
 		background-position: 0% 50%;
 	}
 }
-.bg, .newsletter-bg {
-  background-repeat: no-repeat;
-  background-size: 1080px auto;
-}
-
-.bg {
-  background-position: center top;
-  padding: 100px 300px;
-  height: 100vh
-}
-
-.wrap {
+.box-blur {
+  overflow: hidden;
   position: relative;
 }
 
-.newsletter-bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 30px;
-    margin: 0 auto;
-  background-position: center -100px;
-  -webkit-filter: blur(7px);
+.box-blur * {
+  position: relative;
+  z-index: 3;
+}
+cite {
+  font-family: 'Filson Soft', Arial;
+}
+.box-blur p {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  z-index: 3;
+  font-family: 'Filson Soft', Arial;
+  font-size: 18px;
+}
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.3)
 }
 
-.newsletter-text {
-    border: 2px solid white;
-    padding: 50px;
-    margin: 0 auto;
-    position: relative;
-    max-width: 500px;
-    h2 {
-      color: white;
-      margin-top: 0;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-family: 'Montserrat', sans-serif;
-    }
-  }
+.box-blur::after {
+  content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.box-blur::before {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(http://www.wallpaperup.com/uploads/wallpapers/2015/03/27/647550/5c6f5eae95ff3daa6d257f4701df5aa2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(10px) !important;
+    transform: scale(1.025, 1.025);
+}
+
+.fa-compass {
+  margin-right: 10px;
+}
+
+.nav {
+  width: 100%;
+}
+
+.logo {
+  float: left;
+}
+.logo p {
+  font-size: 50px;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.nav .nav-menu {
+  display: flex;
+  float: right;
+  margin-right: 50px;
+}
+
+.container {
+  width: 600px;
+  padding: 20px;
+  margin: 70px auto 90px auto;
+  text-align: center;
+  border-radius: 15px;
+}
+.container h1 {
+  color: #fff;
+  font-family: 'Filson Soft', Arial;
+  border-bottom: 2px dotted #fff;
+  padding: 5px;
+}
+.container h3 {
+  font-family: 'Filson Soft', Arial;
+  color: #fff;
+  border-bottom: 2px dotted #fff;
+}
+.container a {
+  color: #fff;
+  font-family: 'Filson Soft', Arial;
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+}
+
+.works {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-each {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.work-each img {
+  width: 100%;
+  transition: all 300ms ease;
+}
+
+p.eyes-icon{
+  color: #fff;
+  position: absolute;
+  font-size: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  margin: auto;
+  transition: all 300ms ease;
+}
+
+.work-each:hover p.eyes-icon {
+  opacity: 1;
+}
+
+.work-each:hover img {
+  filter: blur(12px);
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  
+}
+.social-icons a i {
+  font-size: 30px;
+  margin: 10px;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+.social-icons a i:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+  
+}
+::-webkit-scrollbar-thumb {
+    
+  background-color: rgba(0,0,0,0.6);
+}
 	</style>
 <body>
  <div class="d-flex flex-column justify-content-center w-100 h-100">
@@ -74,28 +204,45 @@
 	<div class="d-flex flex-column justify-content-center align-items-center">
 		<h1 class="fw-light text-white m-0">Yogesh Baghel</h1>
 	</div>
-	 <div class="bg">
-  <div class="wrap">
-      <div class="newsletter-bg"></div>  
-<div class="newsletter-text">
-    <h2>This is the email you are looking for.</h2>
-    
-    <form action="#">
-      <div>
-        <label for="name" class="sr-only">Text Input:</label>
-        <input type="text" name="name" id="name" class="form-control" placeholder="vader@galacticempire.com" />
-      </div>
-
-
-      <div>
-        <input type="submit" value="Submit" class="form-control" />
-      </div>
-    </form>  
+	 <div class="box-blur container" id="how">
+    <h1>How it's Done</h1>
+    <p><cite>"For blur-box, I'm using ::after to style and control the image background to make it blur just only inside the box for the content. For all you have to do is just set width and height of the element that you want to and use class ".box-blur". for profile images, You should use images with a specific size ( 360px width and 240px height) so the images won't be cropped out. the blur background panel will use the images that you use for blury panel background (you dont have to do anything. Just set src of the image that you are going to use.)"</cite></p>
   </div>
   
+  <div class="box-blur container" id="inspiration">
+    <h1>Inspiration</h1>
+    <p>This Project was Inspired by '<a href="https://codepen.io/nsatee/pen/womjjQ">Blurie Box</a>' on CodePen. Check it out!</p>
   </div>
-
-</div>
+  
+  <div class="box-blur container" id="gallery">
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <div class="work-each">
+            <img src="http://wowslider.com/sliders/demo-94/data1/images/photo1428452788387375d846a8ab4.jpg" alt="" />
+            <p class="eyes-icon"><i class="fa fa-tree" aria-hidden="true"></i></p>
+          </div>
+      
+          <div class="work-each">
+            <img src="http://www.pixelstalk.net/wp-content/uploads/2016/04/Dimond-wallpapers-HD.jpg" alt="" />
+            <p class="eyes-icon"><i class="fa fa-diamond" aria-hidden="true"></i></p>
+          </div>
+      
+    </div>
+  </div>
+  
+  <div class="box-blur container" id="social">
+    <h1>Social</h1>
+    <div class="social-icons">
+      <a href="https://codepen.io/Josoto/"><i class="fa fa-codepen"></i></a>
+      <a href="https://github.com/artistjoshcorbett" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+  </div>
+  
+  <div class="box-blur container" id="inspiration">
+    <h1>Works Cited</h1>
+    <h3>Because I'm Special</h3>
+    <p>Satee, Nattawood. "Blurie Box (Pure CSS)." CodePen. N.p., n.d. Web. <a href="https://codepen.io/nsatee/pen/womjjQ">https://codepen.io/nsatee/pen/womjjQ</a>.</p>
+  </div>
 
 </div>
 </div>
