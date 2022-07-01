@@ -10,10 +10,9 @@
 	body {
 		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 		background-size: 400% 400%;
-		animation: gradient 15s ease infinite;
+		animation: gradient 10s ease infinite;
 		height: 100vh;
 }
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -25,6 +24,10 @@
 		background-position: 0% 50%;
 	}
 }
+.name{
+	font-size:20px;
+	align-
+		}
 .box-blur {
   overflow: hidden;
   position: relative;
@@ -72,6 +75,17 @@ cite {
     background-attachment: fixed;
     filter: blur(10px) !important;
     transform: scale(1.025, 1.025);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .fa-compass {
@@ -200,51 +214,21 @@ p.eyes-icon{
 }
 	</style>
 <body>
- <div class="d-flex flex-column justify-content-center w-100 h-100">
-
-	<div class="d-flex flex-column justify-content-center align-items-center">
+ <div class="main">
+	<div class="name">
 		<h1 class="fw-light text-white m-0">Yogesh Baghel</h1>
 	</div>
 	 <div class="box-blur container" id="how">
-    <h1>How it's Done</h1>
+    <h1></h1>
     <p><cite>"For blur-box, I'm using ::after to style and control the image background to make it blur just only inside the box for the content. For all you have to do is just set width and height of the element that you want to and use class ".box-blur". for profile images, You should use images with a specific size ( 360px width and 240px height) so the images won't be cropped out. the blur background panel will use the images that you use for blury panel background (you dont have to do anything. Just set src of the image that you are going to use.)"</cite></p>
   </div>
   
   <div class="box-blur container" id="inspiration">
     <h1>Inspiration</h1>
-    <p>This Project was Inspired by '<a href="https://codepen.io/nsatee/pen/womjjQ">Blurie Box</a>' on CodePen. Check it out!</p>
+    <p>This Project was Inspired by '<a href="">Blurie Box</a>' on CodePen. Check it out!</p>
   </div>
   
-  <div class="box-blur container" id="gallery">
-    <h1>Gallery</h1>
-    <div class="gallery">
-      <div class="work-each">
-            <img src="http://wowslider.com/sliders/demo-94/data1/images/photo1428452788387375d846a8ab4.jpg" alt="" />
-            <p class="eyes-icon"><i class="fa fa-tree" aria-hidden="true"></i></p>
-          </div>
-      
-          <div class="work-each">
-            <img src="http://www.pixelstalk.net/wp-content/uploads/2016/04/Dimond-wallpapers-HD.jpg" alt="" />
-            <p class="eyes-icon"><i class="fa fa-diamond" aria-hidden="true"></i></p>
-          </div>
-      
-    </div>
-  </div>
   
-  <div class="box-blur container" id="social">
-    <h1>Social</h1>
-    <div class="social-icons">
-      <a href="https://codepen.io/Josoto/"><i class="fa fa-codepen"></i></a>
-      <a href="https://github.com/artistjoshcorbett" target="_blank"><i class="fa fa-github"></i></a>
-    </div>
-  </div>
-  
-  <div class="box-blur container" id="inspiration">
-    <h1>Works Cited</h1>
-    <h3>Because I'm Special</h3>
-    <p>Satee, Nattawood. "Blurie Box (Pure CSS)." CodePen. N.p., n.d. Web. <a href="https://codepen.io/nsatee/pen/womjjQ">https://codepen.io/nsatee/pen/womjjQ</a>.</p>
-  </div>
-
 </div>
 </div>
 </body>
