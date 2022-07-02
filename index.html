@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Page</title>
 </head>
-	<style>
-	body {
-		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-		background-size: 400% 400%;
-		animation: gradient 10s ease infinite;
-		height: 100vh;
+<style>
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
 }
 @keyframes gradient {
 	0% {
@@ -24,211 +24,263 @@
 		background-position: 0% 50%;
 	}
 }
-.name{
+.main{
+	padding: 10px;
+	
+}
+@media screen and (max-width: 600px) {
+	.main {
+		width: 90%;
+	}
+}
+.name img{
+	display:block;
+	width:100px;
+	height:100px;
+	border-radius: 80px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.first{
 	font-size:20px;
-	align-
-		}
+	text-align:center;
+	text-decoration:underline;
+}
+.first a{
+	color:black;
+}
+.first a:hover{
+	color:rgba(100,10,0,0.5);
+	text-decoration:bold;
+}
+.second{
+	padding-top: 20px;
+	font-size:40px;
+	text-align:center;
+	font-family:'Filson Soft', Arial;
+}
 .box-blur {
-  overflow: hidden;
-  position: relative;
+	overflow: hidden;
+	position: relative;
 }
 
 .box-blur * {
-  position: relative;
-  z-index: 3;
+	position: relative;
+	z-index: 3;
 }
-cite {
-  font-family: 'Filson Soft', Arial;
+.cite {
+	font-family: 'Filson Soft', Arial;
 }
 .box-blur p {
-  position: relative;
-  padding: 20px;
-  color: #fff;
-  z-index: 3;
-  font-family: 'Filson Soft', Arial;
-  font-size: 18px;
+	position: relative;
+	padding: 20px;
+	color: black;
+	z-index: 3;
+	font-family: 'Filson Soft', Arial;
+	font-size: 18px;
 }
 .nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.3)
+	background-color: rgba(255, 255, 255, 0.3)
 }
 
 .box-blur::after {
-  content: "";
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-  background-color: rgba(255, 255, 255, 0.4);
+	content: "";
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.4);
 }
-
+}
 .box-blur::before {
-    content: "";
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
-    background-size: cover;
-    background-attachment: fixed;
-    filter: blur(10px) !important;
-    transform: scale(1.025, 1.025);
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+	content: "";
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient();
+	background-size: cover;
+	background-attachment: fixed;
+	filter: blur(20px) !important;
+	transform: scale(1.025, 1.025);
 }
 
 .fa-compass {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .nav {
-  width: 100%;
+	width: 100%;
 }
 
 .logo {
-  float: left;
+	float: left;
 }
 .logo p {
-  font-size: 50px;
-  padding: 0;
-  margin-left: 50px;
+	font-size: 50px;
+	padding: 0;
+	margin-left: 50px;
 }
 
 .nav .nav-menu {
-  display: flex;
-  float: right;
-  margin-right: 50px;
+	display: flex;
+	float: right;
+	margin-right: 50px;
 }
 
 .container {
-  width: 600px;
-  padding: 20px;
-  margin: 70px auto 90px auto;
-  text-align: center;
-  border-radius: 15px;
+	width: 600px;
+	padding: 20px;
+	margin: 70px auto 90px auto;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 7px 12px rgba(0,0,0,0.2);
 }
 .container h1 {
-  color: #fff;
-  font-family: 'Filson Soft', Arial;
-  border-bottom: 2px dotted #fff;
-  padding: 5px;
+	color: #fff;
+	font-family: 'Filson Soft', Arial;
+	border-bottom: 2px dotted #fff;
+	padding: 5px;
 }
 .container h3 {
-  font-family: 'Filson Soft', Arial;
-  color: #fff;
-  border-bottom: 2px dotted #fff;
+	font-family: 'Filson Soft', Arial;
+	color: #fff;
+	border-bottom: 2px dotted #fff;
 }
 .container a {
-  color: #fff;
-  font-family: 'Filson Soft', Arial;
-  text-decoration: underline;
+	color: #fff;
+	font-family: 'Filson Soft', Arial;
+	text-decoration: underline;
 }
-
+.container:hover{
+	background:rgba(0,0,0,0.2);
+	cursor:pointer;
+	transform: scale(1.1);
+	transition: 0.3s all ease-in-out;
+}
+.container .blog-date{
+	margin-top:-10px;
+	margin-bottom:-30px;
+	text-align:left;
+	font-size: 20px;
+	font-family:Courier New;
+}
+.container span{
+	font-size:60px;
+	text-align:left;
+}
+@media screen and (max-width: 600px) {
+	.container{
+		width: 100%;
+		padding:0;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
 .gallery {
-  display: flex;
+	display: flex;
 }
 
 .works {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .work-each {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  margin: 20px;
-  cursor: pointer;
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	margin: 20px;
+	cursor: pointer;
 }
 
 .work-each img {
-  width: 100%;
-  transition: all 300ms ease;
+	width: 100%;
+	transition: all 300ms ease;
 }
 
 p.eyes-icon{
-  color: #fff;
-  position: absolute;
-  font-size: 70px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0;
-  margin: auto;
-  transition: all 300ms ease;
+	color: #fff;
+	position: absolute;
+	font-size: 70px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	margin: auto;
+	transition: all 300ms ease;
 }
 
 .work-each:hover p.eyes-icon {
-  opacity: 1;
+	opacity: 1;
 }
 
 .work-each:hover img {
-  filter: blur(12px);
+	filter: blur(12px);
 }
 
 .social-icons {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 .social-icons a {
-  
+	
 }
 .social-icons a i {
-  font-size: 30px;
-  margin: 10px;
-  padding: 12px;
-  border: 2px solid transparent;
-  border-radius: 15px;
-  border: 2px solid #fff;
-  border-radius: 15px;
+	font-size: 30px;
+	margin: 10px;
+	padding: 12px;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	border: 2px solid #fff;
+	border-radius: 15px;
 }
 .social-icons a i:hover {
-  color: #000;
-  background-color: #fff;
+	color: #000;
+	background-color: #fff;
 }
-
+.footer{
+	font-size:20px;
+	text-align:center;
+	
+}
 
 
 ::-webkit-scrollbar {
-    width: 8px;
+	width: 8px;
 }
- 
+
 ::-webkit-scrollbar-track {
-  
+	
 }
 ::-webkit-scrollbar-thumb {
-    
-  background-color: rgba(0,0,0,0.6);
+	
+	background-color: rgba(0,0,0,0.6);
 }
-	</style>
+</style>
 <body>
- <div class="main">
-	<div class="name">
-		<h1 class="fw-light text-white m-0">Yogesh Baghel</h1>
+<div class="main">
+	<div class="theme">
+	
 	</div>
-	 <div class="box-blur container" id="how">
-    <h1></h1>
-    <p><cite>"For blur-box, I'm using ::after to style and control the image background to make it blur just only inside the box for the content. For all you have to do is just set width and height of the element that you want to and use class ".box-blur". for profile images, You should use images with a specific size ( 360px width and 240px height) so the images won't be cropped out. the blur background panel will use the images that you use for blury panel background (you dont have to do anything. Just set src of the image that you are going to use.)"</cite></p>
-  </div>
-  
-  <div class="box-blur container" id="inspiration">
-    <h1>Inspiration</h1>
-    <p>This Project was Inspired by '<a href="">Blurie Box</a>' on CodePen. Check it out!</p>
-  </div>
-  
-  
+<div class="name">
+<img src="/home/yogesh/all/Pictures/profile.jpg">
+<h1 class="first"><a href="#">Yogesh Baghel</a></h1>
+<h1 class="second">My Blogs</h1>
+</div>
+<hr>
+<div class="box-blur container" id="how">
+<p class="blog-date">July 19 2022</p>
+<h1>Introdunction of Machine Learning</h1>
+<p><cite>Machine learning (ML) is field of of computer science with the help of which computer system can provide sense to data in much the same way as human being do.</cite></p>
+<a href="mlblog.html"><span>➽</span></a>
+</div>
+
+<p class="footer"> Made with ❤️ <br>All Right Reserves @ 2022</p>
+
 </div>
 </div>
 </body>
