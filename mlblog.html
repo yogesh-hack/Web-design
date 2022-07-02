@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Page</title>
+</head>
+<style>
+body {
+	background:url("https://i0.wp.com/rabbitholemag.com/wp-content/uploads/2021/03/4642760-scaled.jpg?fit=2560%2C1811&ssl=1");
+	/*background-position:fixed;*/
+	/*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+	background-size: 100%;
+	background-attachment:fixed;
+	/*animation: gradient 10s ease infinite;*/
+}
+.main{
+	padding: 10px;
+	
+}
+@media screen and (max-width: 600px) {
+	.main {
+		width: 90%;
+	}
+}
+.name img{
+	display:block;
+	width:100px;
+	height:100px;
+	border-radius: 80px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.first{
+	font-size:20px;
+	text-align:center;
+	text-decoration:underline;
+}
+.first a{
+	color:black;
+}
+.first a:hover{
+	color:rgba(100,10,0,0.5);
+	text-decoration:bold;
+}
+.second{
+	color:white;
+	padding-top: 20px;
+	font-size:40px;
+	text-align:center;
+	font-family:'Filson Soft', Arial;
+}
+.box-blur {
+	overflow: hidden;
+	position: relative;
+}
+
+.box-blur * {
+	position: relative;
+	z-index: 3;
+}
+.cite {
+	font-family: 'Filson Soft', Arial;
+}
+.box-blur p {
+	position: relative;
+	padding: 20px;
+	color: black;
+	z-index: 3;
+	font-family: 'Filson Soft', Arial;
+	font-size: 18px;
+}
+.nav-item:hover {
+	background-color: rgba(255, 255, 255, 0.3)
+}
+
+.box-blur::after {
+	content: "";
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+}
+.box-blur::before {
+	content: "";
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient();
+	background-size: cover;
+	background-attachment: fixed;
+	filter: blur(20px) !important;
+	transform: scale(1.025, 1.025);
+}
+
+.fa-compass {
+	margin-right: 10px;
+}
+
+.nav {
+	width: 100%;
+}
+
+.logo {
+	float: left;
+}
+.logo p {
+	font-size: 50px;
+	padding: 0;
+	margin-left: 50px;
+}
+
+.nav .nav-menu {
+	display: flex;
+	float: right;
+	margin-right: 50px;
+}
+
+.container {
+	width: 800px;
+	backdrop-filter:blur(6px);
+	padding: 20px;
+	margin: 70px auto 90px auto;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 7px 12px rgba(0,0,0,0.2);
+}
+.container img{
+	justify-content:left;
+	width:100%;
+	padding:5px;
+	border-radius:20px;
+}
+.container p{
+	text-align:left;
+}
+.container h1 {
+	color: black;
+	font-size:40px;
+	font-family: Monospace;
+	text-decoration:bold;
+	padding: 5px;
+}
+.container h2 {
+	padding:5px;
+	text-decoration:underline;
+	text-align:left;
+	font-family: 'Filson Soft', Arial;
+	color:black;
+	font-size:25px;
+}
+.container h3{
+	font-size:20;
+	text-align:left;
+}
+.container a {
+	color: green;
+	font-family: 'Filson Soft', Arial;
+	text-decoration: underline;
+}
+.container ul li{
+	text-align:left;
+	font-size:18px;
+}
+.container span{
+	font-size:60px;
+	text-align:left;
+}
+@media screen and (max-width: 600px) {
+	.container{
+		width: 100%;
+		padding:0;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+.gallery {
+	display: flex;
+}
+
+.works {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.work-each {
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.work-each img {
+	width: 100%;
+	transition: all 300ms ease;
+}
+
+p.eyes-icon{
+	color: #fff;
+	position: absolute;
+	font-size: 70px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	margin: auto;
+	transition: all 300ms ease;
+}
+
+.work-each:hover p.eyes-icon {
+	opacity: 1;
+}
+
+.work-each:hover img {
+	filter: blur(12px);
+}
+
+.social-icons {
+	margin-top: 10px;
+}
+.social-icons a {
+	
+}
+.social-icons a i {
+	font-size: 30px;
+	margin: 10px;
+	padding: 12px;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	border: 2px solid #fff;
+	border-radius: 15px;
+}
+.social-icons a i:hover {
+	color: #000;
+	background-color: #fff;
+}
+.footer{
+	font-size:20px;
+	text-align:center;
+	color:white;
+	backdrop-filter:blur(4px);
+	text-decoration:bold;
+}
+
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	
+}
+::-webkit-scrollbar-thumb {
+	
+	background-color: rgba(0,0,0,0.6);
+}
+</style>
+<body>
+<div class="main">
+<div class="theme">
+
+</div>
+<div class="name">
+<img src="/home/yogesh/all/Pictures/profile.jpg">
+<h1 class="first"><a href="#">Yogesh Baghel</a></h1>
+<h1 class="second">My Blogs</h1>
+</div>
+<hr>
+<div class="box-blur container" id="how">
+<h1>Introdunction of Machine Learning</h1>
+<img src="https://miro.medium.com/max/630/1*OOuj9yNs8BB-S7bD7z_ZBA.jpeg">
+<p><cite>Machine learning (ML) is field of of computer science with the help of which computer system can provide sense to data in much the same way as human being do.
+<h2>Application of machine learning</h2>
+<p>Machine laerning is most rapidly growing technology. Its is used to solve manay real-world-complex problems which cannot be solve with traditional approach.</p>
+<h3>Real world appliction of machine learning are..</h3>
+<ul>
+<li>Emotion analysis</li>
+<li>Sentiment analysis</li>
+<li>Error detection and prevention</li>
+</ul>
+<h2>Diffrent Type of Machine learning</h2>
+<img class=""img2 src="https://miro.medium.com/max/630/1*mlhCfNeNSo75TRH9yEUJIA.png">
+<h3>Supervise Learning</h3>
+<p>Supervised Learning are the most commonly used ML algo. In this learning algo take the data sample(training data) and its give predict output.<br>
+
+For Example: X : Input variable Y: Output variable
+<br>
+Now,apply algo to Train input data (X) and predicted output variabe(Y)<p>
+<h3>Its Divided into board clases are :</h3>
+<ul>
+<li>Classification</li>
+<li> Regression</li>
+</ul>
+
+<img src="https://miro.medium.com/max/630/1*ZSrEyTGmzO9EjKwx50gOVA.png">
+
+<h2> Algorithms using in ML </h2>
+
+<img src="https://miro.medium.com/max/630/1*o7-FKhwQlgaSX0oTSw_3Gw.png">
+
+
+
+</cite></p>
+<span></span>
+</div>
+
+<p class="footer"> Made with ❤️ <br>All Right Reserves @ 2022</p>
+
+</div>
+</div>
+</body>
+<html>
