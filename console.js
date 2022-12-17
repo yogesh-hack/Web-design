@@ -9,3 +9,9 @@ function new(){
 
 new()
 
+show = () => {
+  console.log("display blog on screen");
+}
+
+
+show() 
