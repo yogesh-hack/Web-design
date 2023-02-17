@@ -1,10 +1,4 @@
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWVbzdR" data-user="yogesh_hack" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/yogesh_hack/pen/QWVbzdR">
-  SpaceX Design Website </a> by Yogesh (<a href="https://codepen.io/yogesh_hack">@yogesh_hack</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+## SpaceX Website
+![screencapture-codepen-io-yogesh-hack-full-QWVbzdR-2023-02-17-23_52_02](https://user-images.githubusercontent.com/83384315/219749277-6be44c4b-bb78-42fa-a871-c371df34f525.png)
 
-#### Github Gist link
-
-<script src="https://gist.github.com/yogesh-hack/7a884fbd06325a4013c5082221e3359c.js"></script>
+!(https://codepen.io/yogesh_hack/pen/QWVbzdR)
